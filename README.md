@@ -37,46 +37,7 @@ Discord Voice / Embeds  <──▶  Red-DiscordBot (Audio + Lavalink)
 
 ---
 
-## 📦 Instalación en Red-DiscordBot
-
-### Opción 1: Vía Downloader de RedBot
-```text
-!repo add radio-crizpy https://github.com/TioCriZpy/radio-crizpy-bot
-!cog install radio-crizpy web_controller
-!load web_controller
-```
-
-### Opción 2: Instalación Manual
-1. Instala las dependencias en el entorno virtual de tu RedBot *(respetando `<2` en Pydantic por compatibilidad con `typing-extensions` de RedBot)*:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Copia la carpeta `web_controller/` dentro de tu directorio de cogs personalizados de RedBot.
-3. Carga el cog en Discord:
-   ```text
-   !load web_controller
-   ```
-
----
-
-## ⚙️ Configuración Inicial (Comandos)
-
-Una vez cargado el cog, usa comandos de dueño (`!wc`) y slash commands:
-
-- `!wc` — Muestra el estado del controlador, puerto, clientes WS conectados y configuración actual.
-- `!wc setkey <nueva_api_key>` — Define tu API Key secreta *(cámbiala obligatoriamente antes de exponer el puerto)*.
-- `!wc setchannel #canal` — Define el canal de texto donde el bot enviará el embed `🎶 Sonando` y avisos.
-- `!wc setport <puerto>` — Cambia el puerto de FastAPI (por defecto `8710`).
-- `!wc oauth <client_id> <client_secret> <redirect_uri>` — Configura Discord OAuth2 para el login web.
-- `/rol <@rol>` — Configura un rol DJ obligatorio para controlar desde la web.
-- `/prioridad <@rol>` — Configura el rol con prioridad de reproducción.
-- `/prefix <prefijo>` — Cambia el prefijo del bot en el servidor.
-
----
-
 ## 🔌 Endpoints Principales
-
-Todos los endpoints requieren header `x-api-key` (y `x-session-token` para acciones de usuario):
 
 | Método | Ruta | Descripción |
 | :--- | :--- | :--- |
