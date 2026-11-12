@@ -1,0 +1,6 @@
+{
+    "author": ["TioCriZpy"],
+    "name": "Radio CriZpy Bot",
+    "short": "Red-DiscordBot custom cog with FastAPI REST & WebSocket API for Radio CriZpy.",
+    "description": "Custom Red-DiscordBot cog that exposes a REST + WebSocket controller to manage Lavalink audio playback, queues, YouTube playlists, and live Discord embeds from CriZpy Media Player."
+}

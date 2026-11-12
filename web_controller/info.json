@@ -1,0 +1,10 @@
+{
+    "author": ["TioCriZpy"],
+    "install_msg": "WebController cog para Radio CriZpy instalado. Usa `[p]wc` para ver la configuración y `[p]wc setkey <api_key>` para definir tu clave.",
+    "name": "WebController",
+    "disabled": false,
+    "short": "FastAPI REST + WebSocket controller for Radio CriZpy.",
+    "description": "Exposes a REST API and WebSocket to control RedBot Audio/Lavalink playback, queues, history, 48h activity logs, and user playlists externally.",
+    "tags": ["audio", "api", "fastapi", "websocket", "lavalink", "music"],
+    "requirements": ["fastapi<0.110.0", "pydantic<2", "uvicorn", "websockets"]
+}

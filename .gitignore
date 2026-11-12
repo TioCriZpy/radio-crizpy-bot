@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.bak
+*.orig
+.env
+.env.*
+RedBotData/
+.venv/
+venv/
+.DS_Store
